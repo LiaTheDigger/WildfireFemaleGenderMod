@@ -175,8 +175,8 @@ public class GenderLayer extends RenderLayer<AbstractClientPlayer, PlayerModel<A
 				rightBounceRotation = Mth.lerp(partialTicks, rightBreastPhysics.getPreBounceRotation(), rightBreastPhysics.getBounceRotation());
 			}
 			float breastSize = bSize * 1.5f;
-			if (breastSize > 0.7f) breastSize = 0.7f;
-			if (bSize > 0.7f) {
+			if (breastSize > 3.0f) breastSize = 3.0f;
+			if (bSize > 3.0f) {
 				breastSize = bSize;
 			}
 

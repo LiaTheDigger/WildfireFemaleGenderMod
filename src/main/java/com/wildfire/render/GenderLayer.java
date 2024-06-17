@@ -183,7 +183,7 @@ public class GenderLayer extends RenderLayer<AbstractClientPlayer, PlayerModel<A
 			if (breastSize < 0.02f) return;
 
 			float zOff = 0.0625f - (bSize * 0.0625f);
-			breastSize = bSize + 0.5f * Math.abs(bSize - 0.7f) * 2f;
+			breastSize = bSize + 0.5f * Math.abs(bSize - 3.0f) * 2f;
 
 			//If the armor physics is overridden ignore resistance
 			float resistance = plr.getArmorPhysicsOverride() ? 0 : Mth.clamp(genderArmor.physicsResistance(), 0, 1);
